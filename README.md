@@ -2,6 +2,8 @@
 
 This is a personal portfolio website project created using HTML, CSS, and JavaScript to showcase my resume, internship experience, projects, and contact information.
 
+## 🌐 Live Project
+🔗 [View Project on Netlify](https://portfolio-chapter.netlify.app/)
 ## 📁 Project Structure
 
 - **index.html** - Home page of the portfolio
