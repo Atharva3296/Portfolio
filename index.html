@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva shedge -  Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Atharva</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item active">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="about.html" class="nav-item">
+                    <span class="nav-icon">👨‍💻</span>
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="projects.html" class="nav-item">
+                    <span class="nav-icon">💼</span>
+                    <span class="nav-text">Work</span>
+                </a>
+                <a href="contact.html" class="nav-item">
+                    <span class="nav-icon">📧</span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero-container">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting-text">
+                    <span class="wave-emoji">👋</span>
+                    <span>Hello, I'm</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="name-text">ATHARVA SHEDGE</span>
+                </h1>
+                
+                <div class="role-container">
+                    <span class="role-prefix">I craft </span>
+                    <div class="rotating-roles">
+                        <span class="role active">Digital Experiences</span>
+                        <span class="role">Web Applications</span>
+                        <span class="role">User Interfaces</span>
+                        <span class="role">Creative Solutions</span>
+                    </div>
+                </div>
+                
+                <p class="hero-description">
+                    I’m Atharva — I create modern, dynamic, and user-friendly MERN-stack web applications.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="projects.html" class="cta-primary">
+                        <span>View My Work</span>
+                        <div class="button-glow"></div>
+                    </a>
+                    <button class="cta-secondary" onclick="downloadCV('Atharva-shedge resume.pdf')">
+                        <span class="button-icon">📄</span>
+                        <span>Download CV</span>
+                    </button>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Atharva3296" class="social-link" data-platform="GitHub">
+                        <span>💻</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/atharvashedgeofficial/" class="social-link" data-platform="LinkedIn">
+                        <span>💼</span>
+                    </a>
+                    <a href="https://www.instagram.com/atharva_._shedge/" class="social-link" data-platform="Instagram">
+                        <span>📸</span>
+                    </a>
+                    <a href="mailto:atharvashedge98@gmail.com" class="social-link" data-platform="Email">
+                        <span>✉️</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-ring"></div>
+                    <div class="profile-image">
+                        <img src="atharva photo.jpg" alt="Atharva" class="profile-pic">
+                    </div>
+                    <div class="floating-elements">
+                        <div class="tech-bubble bubble-1">⚛️</div>
+                        <div class="tech-bubble bubble-2">🔥</div>
+                        <div class="tech-bubble bubble-3">⚡</div>
+                        <div class="tech-bubble bubble-4">🚀</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </main>
+
+    <!-- Technical Skills Section -->
+    <section class="skills-section">
+        <div class="skills-container">
+            <h2 class="skills-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>Frontend Development</h3>
+                    <p>Creating responsive, interactive user interfaces</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Backend Development</h3>
+                    <p>Building robust server-side applications and APIs</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Database</h3>
+                    <p>Designing and managing data storage solutions</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">💻</div>
+                    <h3>Languages</h3>
+                    <p>Proficient in multiple programming languages</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Web Technologies</h3>
+                    <p>Modern web development tools and frameworks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

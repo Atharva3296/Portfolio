@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Atharva shedge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Atharva</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="about.html" class="nav-item">
+                    <span class="nav-icon">👨‍💻</span>
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="projects.html" class="nav-item active">
+                    <span class="nav-icon">💼</span>
+                    <span class="nav-text">Work</span>
+                </a>
+                <a href="contact.html" class="nav-item">
+                    <span class="nav-icon">📧</span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Content -->
+    <main class="page-content">
+        <div class="page-header">
+            <h1 class="page-title">My Work</h1>
+            <p class="page-subtitle">A collection of projects I'm proud of</p>
+        </div>
+
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Major</button>
+            <button class="filter-btn" data-filter="mobile">Minor</button>
+            <!-- <button class="filter-btn" data-filter="design">Design</button> -->
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="SIP.png" alt="SIP calc">
+                    <div class="project-overlay">
+                        <button class="project-btn" onclick="openProjectModal(1)">View Details</button>
+                        <a href="https://atharva3296.github.io/Sip-calculator.github.io/" class="project-btn secondary">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>SIP Calculator</h3>
+                    <p> It allows users to calculate their total investment, returns, and corpus based on monthly contributions, expected annual returns, and investment duration.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="Quiz.png" alt="Quiz">
+                    <div class="project-overlay">
+                        <button class="project-btn" onclick="openProjectModal(2)">View Details</button>
+                        <a href="https://atharva3296.github.io/quiz.github.io/" class="project-btn secondary">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Quiz Website</h3>
+                    <p>Answer the quiz and get instant feedback here!, I will change the UI/UX and make it proper</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="Scrapbook.png" alt="FitnessPal">
+                    <div class="project-overlay">
+                        <button class="project-btn" onclick="openProjectModal(3)">View Details</button>
+                        <a href="https://memorychapter.netlify.app/" class="project-btn secondary">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Digital Kids Scrapbook</h3>
+                    <p>where users can create and view personalized memory books with one image per page. It provides a creative way to capture and relive memories.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Html</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">React.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <img src="chatbot.png" alt="Chatbot">
+                    <div class="project-overlay">
+                        <button class="project-btn" onclick="openProjectModal(4)">View Details</button>
+                        <a href="#" class="project-btn secondary">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Chatbot</h3>
+                    <p>
+                        Currently developing a chatbot that provides real-time weather updates, currency exchange rates, and the latest news about Pune and technology. The project focuses on delivering accurate information in a user-friendly conversational interface.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Illustrator</span>
+                        <span class="tech-tag">Photoshop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">×</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
