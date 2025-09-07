@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <div class="nav-brand">
@@ -38,7 +38,7 @@
     </div>
 </nav>
 
-    <!-- About Content -->
+    
     <main class="page-content">
         <div class="page-header">
             <h1 class="page-title">About Me</h1>
@@ -148,6 +148,40 @@
                             <a href="android-internship.pdf" target="_blank" class="certificate-link">View Certificate</a>
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Chatbot -->
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-bubble" id="chatbotBubble">
+                <span class="chatbot-icon">💬</span>
+            </div>
+            
+            <div class="chatbot-window" id="chatbotWindow">
+                <div class="chatbot-header">
+                    <div class="chatbot-title">
+                        <span class="chatbot-avatar">🤖</span>
+                        <span>Ask me anything!</span>
+                    </div>
+                    <button class="chatbot-close" id="chatbotClose">✕</button>
+                </div>
+                
+                <div class="chatbot-messages" id="chatbotMessages">
+                    <div class="chatbot-message bot-message">
+                        <div class="message-content">
+                            Hi! I'm Atharva's assistant. You can ask me about:
+                            <br>• Who is Atharva?
+                            <br>• What skills does he have?
+                            <br>• Show me his projects
+                            <br>• How to contact him?
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chatbot-input-container">
+                    <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your question...">
+                    <button class="chatbot-send" id="chatbotSend">Send</button>
                 </div>
             </div>
         </div>
