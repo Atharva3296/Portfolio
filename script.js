@@ -336,7 +336,7 @@ class PortfolioManager {
         "Atharva's comprehensive technical skills include:<br><br><strong>Frontend Development:</strong><br>• React.js, JavaScript (ES6+), HTML5, CSS3<br>• Tailwind CSS, Responsive Design<br>• UI/UX Design principles<br><br><strong>Backend Development:</strong><br>• Node.js, Express.js<br>• REST APIs development<br>• Server-side architecture<br><br><strong>Database & Tools:</strong><br>• MongoDB (NoSQL), MySQL<br>• Git, VS Code, Postman<br>• AWS cloud services<br>• Figma, Motiff for design<br>• Android Studio, Java"
     } else if (message.includes("project") || message.includes("work") || message.includes("portfolio")) {
       response =
-        "Here are Atharva's key projects:<br><br><strong>Major Projects:</strong><br>• <strong>SIP Calculator:</strong> Investment calculation tool with compound interest calculations<br>• <strong>Quiz Website:</strong> Interactive general knowledge quiz with AI voice feedback<br>• <strong>Disaster Helper:</strong> Comprehensive disaster management application with real-time alerts and resource coordination<br><br><strong>Minor Projects:</strong><br>• <strong>Digital Kids Scrapbook:</strong> Memory book creation app built with React.js<br>• <strong>Chatbot:</strong> Weather, currency, and news bot (In Development)<br><br>You can view all projects with live demos on the <a href='projects.html' style='color: #667eea;'>Projects page</a>!"
+        "Here are Atharva's key projects:<br><br><strong>Major Projects:</strong><br>• <strong>SIP Calculator:</strong> Investment calculation tool with compound interest calculations<br>• <strong>Quiz Website:</strong> Interactive general knowledge quiz with AI voice feedback<br>• <strong>Disaster Helper:</strong> Comprehensive disaster management application with real-time alerts and resource coordination<br><br><strong>Minor Projects:</strong><br>• <strong>Digital Kids Scrapbook:</strong> Memory book creation app built with React.js<br>• <strong>Chatbot:</strong> Weather, currency, and news bot (In Development)<br><br>You can view all projects with live demos on the <a href='projects.html' style='color: #1a1a1dff;'>Projects page</a>!"
     } else if (
       message.includes("contact") ||
       message.includes("reach") ||
@@ -344,13 +344,13 @@ class PortfolioManager {
       message.includes("phone")
     ) {
       response =
-        "You can contact Atharva through multiple channels:<br><br><strong>Direct Contact:</strong><br>• <strong>Email:</strong> atharvashedge98@gmail.com<br>• <strong>Phone:</strong> +91 9529419298<br>• <strong>Location:</strong> Wagholi, Pune, India<br><br><strong>Social Media:</strong><br>• <strong>LinkedIn:</strong> <a href='https://www.linkedin.com/in/atharvashedgeofficial/' target='_blank' style='color: #667eea;'>Professional Profile</a><br>• <strong>GitHub:</strong> <a href='https://github.com/Atharva3296' target='_blank' style='color: #667eea;'>Code Repository</a><br>• <strong>Instagram:</strong> <a href='https://www.instagram.com/atharva_._shedge/' target='_blank' style='color: #667eea;'>Personal Updates</a><br><br>Or use the <a href='contact.html' style='color: #667eea;'>contact form</a> for direct messaging!"
+        "You can contact Atharva through multiple channels:<br><br><strong>Direct Contact:</strong><br>• <strong>Email:</strong> atharvashedge98@gmail.com<br>• <strong>Phone:</strong> +91 9529419298<br>• <strong>Location:</strong> Wagholi, Pune, India<br><br><strong>Social Media:</strong><br>• <strong>LinkedIn:</strong> <a href='https://www.linkedin.com/in/atharvashedgeofficial/' target='_blank' style='color: #252528ff;'>Professional Profile</a><br>• <strong>GitHub:</strong> <a href='https://github.com/Atharva3296' target='_blank' style='color: #1a1b1fff;'>Code Repository</a><br>• <strong>Instagram:</strong> <a href='https://www.instagram.com/atharva_._shedge/' target='_blank' style='color: #2f2f33ff;'>Personal Updates</a><br><br>Or use the <a href='contact.html' style='color: #1f2024ff;'>contact form</a> for direct messaging!"
     } else if (message.includes("github") || message.includes("git") || message.includes("code")) {
       response =
-        "You can find Atharva's code repositories on GitHub:<br><br><strong>GitHub Profile:</strong><br>• <strong>Username:</strong> Atharva3296<br>• <strong>Profile Link:</strong> <a href='https://github.com/Atharva3296' target='_blank' style='color: #667eea;'>github.com/Atharva3296</a><br><br>His GitHub showcases all his projects including:<br>• SIP Calculator<br>• Quiz Website<br>• Digital Kids Scrapbook<br>• Disaster Helper<br>• And more exciting projects!<br><br>Feel free to explore his repositories and see his coding style!"
+        "You can find Atharva's code repositories on GitHub:<br><br><strong>GitHub Profile:</strong><br>• <strong>Username:</strong> Atharva3296<br>• <strong>Profile Link:</strong> <a href='https://github.com/Atharva3296' target='_blank' style='color: #17181aff;'>github.com/Atharva3296</a><br><br>His GitHub showcases all his projects including:<br>• SIP Calculator<br>• Quiz Website<br>• Digital Kids Scrapbook<br>• Disaster Helper<br>• And more exciting projects!<br><br>Feel free to explore his repositories and see his coding style!"
     } else if (message.includes("linkedin") || message.includes("professional") || message.includes("network")) {
       response =
-        "Connect with Atharva on LinkedIn for professional networking:<br><br><strong>LinkedIn Profile:</strong><br>• <strong>Profile:</strong> <a href='https://www.linkedin.com/in/atharvashedgeofficial/' target='_blank' style='color: #667eea;'>linkedin.com/in/atharvashedgeofficial</a><br><br>On LinkedIn, you can find:<br>• Professional experience and internships<br>• Skills endorsements<br>• Project updates<br>• Industry connections<br>• Career achievements<br><br>Perfect for professional inquiries and networking!"
+        "Connect with Atharva on LinkedIn for professional networking:<br><br><strong>LinkedIn Profile:</strong><br>• <strong>Profile:</strong> <a href='https://www.linkedin.com/in/atharvashedgeofficial/' target='_blank' style='color: #101011ff;'>linkedin.com/in/atharvashedgeofficial</a><br><br>On LinkedIn, you can find:<br>• Professional experience and internships<br>• Skills endorsements<br>• Project updates<br>• Industry connections<br>• Career achievements<br><br>Perfect for professional inquiries and networking!"
     } else if (
       message.includes("leetcode") ||
       message.includes("coding") ||
@@ -470,8 +470,8 @@ class PortfolioManager {
   }
 }
 
-function downloadCV() {
-  window.location.href = "Atharva-shedge resume.pdf"
+function downloadCV(filename) {
+  window.location.href = filename || "Atharva-shedge resume.pdf"
 }
 
 function openProjectModal(projectId) {
